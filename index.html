@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEORENT - Арендуйте свой любимый автомобиль</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" alt="Логотип Ridex">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Главная</a>
+          </li>
+
+          <li>
+            <a href="#featured-car" class="navbar-link" data-nav-link>Изучить автомобили</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>О нас</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Блог</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+
+        <div class="header-contact">
+          <a href="tel:00000000000" class="contact-link">0 000 000 00 00</a>
+
+          <span class="contact-time">Пн - Сб: 9:00 - 18:00</span>
+        </div>
+
+        <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
+          <ion-icon name="car-outline"></ion-icon>
+
+          <span id="aria-label-txt">Изучить автомобили</span>
+        </a>
+
+        <a href="#" class="btn user-btn" aria-label="Профиль">
+          <ion-icon name="person-outline"></ion-icon>
+        </a>
+
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Переключить меню">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </div>
+
+    </div>
+</header>
+
+
+
+
+<main>
+  <article>
+
+    <!-- 
+      - #HERO
+    -->
+
+    <section class="section hero" id="home">
+      <div class="container">
+
+        <div class="hero-content">
+          <h2 class="h1 hero-title">Простой способ взять в аренду автомобиль</h2>
+
+          <p class="hero-text">
+            Живете в Душанбе, Худжанд или Хороге!
+          </p>
+        </div>
+
+        <div class="hero-banner"></div>
+
+        <form action="" class="hero-form">
+
+          <div class="input-wrapper">
+            <label for="input-1" class="input-label">Автомобиль, модель или марка</label>
+
+            <input type="text" name="car-model" id="input-1" class="input-field"
+              placeholder="Какой автомобиль вы ищете?">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="input-2" class="input-label">Максимальный ежемесячный платеж</label>
+
+            <input type="text" name="monthly-pay" id="input-2" class="input-field" placeholder="Добавьте сумму в $">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="input-3" class="input-label">Год выпуска</label>
+
+            <input type="text" name="year" id="input-3" class="input-field" placeholder="Добавьте минимальный год выпуска">
+          </div>
+
+          <button type="submit" class="btn">Поиск</button>
+
+        </form>
+
+      </div>
+    </section>
+
+
+           <!-- 
+        - #ПРЕДСТАВЛЕННЫЙ АВТОМОБИЛЬ
+      -->
+
+      <section class="section featured-car" id="featured-car">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Популярные автомобили</h2>
+
+            <a href="#" class="featured-car-link">
+              <span>Просмотреть больше</span>
+
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="featured-car-list">
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-1.jpg" alt="Toyota RAV4 2021" loading="lazy" width="440" height="300"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Toyota RAV4</a>
+                    </h3>
+
+                    <data class="year" value="2021">2021</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 человека</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Гибрид</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">6,1 км / 1 литр</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Автоматическая</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>$440</strong> / месяц
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Добавить в избранное">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Арендовать сейчас</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-2.jpg" alt="BMW 3 Series 2019" loading="lazy" width="440" height="300"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">BMW 3 Series</a>
+                    </h3>
+
+                    <data class="year" value="2019">2019</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 человека</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Бензин</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">8,2 км / 1 литр</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Автоматическая</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>$350</strong> / месяц
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Добавить в избранное">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Арендовать сейчас</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-3.jpg" alt="Volkswagen T-Cross 2020" loading="lazy" width="440"
+                    height="300" class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Volkswagen T-Cross</a>
+                    </h3>
+
+                    <data class="year" value="2020">2020</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 человека</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Бензин</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">5,3 км / 1 литр</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Автоматическая</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>$400</strong> / месяц
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Добавить в избранное">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Арендовать сейчас</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-4.jpg" alt="Cadillac Escalade 2020" loading="lazy" width="440"
+                    height="300" class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Cadillac Escalade</a>
+                    </h3>
+
+                    <data class="year" value="2020">2020</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 человека</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Бензин</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">7,7 км / 1 литр</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Автоматическая</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>$620</strong> / месяц
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Добавить в избранное">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Арендовать сейчас</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-5.jpg" alt="BMW 4 Series GTI 2021" loading="lazy" width="440"
+                    height="300" class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">BMW 4 Series GTI</a>
+                    </h3>
+
+                    <data class="year" value="2021">2021</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 человека</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Бензин</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">7,6 км / 1 литр</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Автоматическая</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>$530</strong> / месяц
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Добавить в избранное">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Арендовать сейчас</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-6.jpg" alt="BMW 4 Series 2019" loading="lazy" width="440" height="300"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">BMW 4 Series</a>
+                    </h3>
+
+                    <data class="year" value="2019">2019</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 человека</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Бензин</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">7,2 км / 1 литр</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Автоматическая</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>$490</strong> / месяц
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Добавить в избранное">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Арендовать сейчас</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+            <!-- 
+        - #НАЧНИТЕ
+      -->
+
+      <section class="section get-start">
+        <div class="container">
+
+          <h2 class="h2 section-title">Начните с 4 простых шагов</h2>
+
+          <ul class="get-start-list">
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-1">
+                  <ion-icon name="person-add-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Создайте профиль</h3>
+
+                <p class="card-text">
+                  Если вы собираетесь использовать отрывок, вам следует быть уверенным.
+                </p>
+
+                <a href="#" class="card-link">Начать</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-2">
+                  <ion-icon name="car-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Скажите нам, какой автомобиль вам нужен</h3>
+
+                <p class="card-text">
+                  Различные версии эволюционировали на протяжении многих лет, иногда случайно, иногда намеренно
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-3">
+                  <ion-icon name="person-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Найдите соответствующего продавца</h3>
+
+                <p class="card-text">
+                  Это типовая иллюстрация. Она выжила не только пять веков, но и пережила переход в электронный вид.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-4">
+                  <ion-icon name="card-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Сделайте сделку</h3>
+
+                <p class="card-text">
+                  Существует множество вариантов, но большинство из них претерпели изменения
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+           <!-- 
+        - #БЛОГ
+      -->
+
+      <section class="section blog" id="blog">
+        <div class="container">
+
+          <h2 class="h2 section-title">Наш блог</h2>
+
+          <ul class="blog-list has-scrollbar">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-1.jpg" alt="Открытие новых офисов компании" loading="lazy"
+                      class="w-100">
+                  </a>
+
+                  <a href="#" class="btn card-badge">Компания</a>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Открытие новых офисов компании</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-01-14">14 января 2022</time>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="114">114</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-2.jpg" alt="Какие автомобили наиболее уязвимы" loading="lazy"
+                      class="w-100">
+                  </a>
+
+                  <a href="#" class="btn card-badge">Ремонт</a>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Какие автомобили наиболее уязвимы</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-01-14">14 января 2022</time>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="114">114</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-3.jpg" alt="Статистика показала средний возраст" loading="lazy"
+                      class="w-100">
+                  </a>
+
+                  <a href="#" class="btn card-badge">Автомобили</a>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Статистика показала средний возраст</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-01-14">14 января 2022</time>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="114">114</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-4.jpg" alt="Что требуется при аренде автомобиля?" loading="lazy"
+                      class="w-100">
+                  </a>
+
+                  <a href="#" class="btn card-badge">Автомобили</a>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Что требуется при аренде автомобиля?</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2024-01-14">14 января 2024</time>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="114">114</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-5.jpg" alt="Новые правила обращения с нашими автомобилями"
+                      loading="lazy" class="w-100">
+                  </a>
+
+                  <a href="#" class="btn card-badge">Компания</a>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Новые правила обращения с нашими автомобилями</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2024-01-14">14 января 2024</time>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="114">114</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+   <!-- 
+    - #ПОДВАЛ
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Логотип Ridex">
+          </a>
+
+          <p class="footer-text">
+            Поиск дешевых арендных автомобилей в Душанбе. С разнообразным парком из 19 000 автомобилей BMW предлагает своим клиентам привлекательный и разнообразный выбор.
+          </p>
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Компания</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">О нас</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Тарифные планы</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Наш блог</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Контакты</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Поддержка</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Центр помощи</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Задать вопрос</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Политика конфиденциальности</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Условия использования</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Гафуров</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Панджанкент</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Айни</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Хорог</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Душанбе</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Худжанд</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Шахристон</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Гулистон</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Бустон</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-skype"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <p class="copyright">
+          &copy; 2022 <a href="#">codewithneo</a>. Все права защищены.
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - ссылка на пользовательский JS
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ссылка на иконки ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
